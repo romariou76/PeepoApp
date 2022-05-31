@@ -7,7 +7,7 @@ import Filtros from "./templates/filtros.jsx";
 function Peepoapp() {
   const [producto, setProduct] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/api/productos")
+    fetch("http://34.176.3.164:4000/api/productos")
       .then((response) => response.json())
       .then((json) => setProduct(json));
   }, []);
@@ -15,7 +15,7 @@ function Peepoapp() {
   //Consumiendo la api de categoria
   const [categoriaa, setCategoria] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/api/categorias")
+    fetch("http://34.176.3.164:4000/api/categorias")
       .then((response) => response.json())
       .then((json) => setCategoria(json));
   }, []);

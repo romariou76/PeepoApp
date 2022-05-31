@@ -7,7 +7,7 @@ import axios from "axios";
 function Login() {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
-  const url = "http://localhost:4000/api/login";
+  const url = "http://34.176.3.164:4000/api/login";
 
   const action = (body) => {
     axios.post(url, body).then((res) => {
@@ -27,7 +27,7 @@ function Login() {
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Ingresa Ahora!</h1>
+          <h1 className="text-5xl font-bold">Ingresa Ahora CSMR!</h1>
           <p className="py-6">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi
             cupiditate vitae possimus ab molestias temporibus harum enim neque

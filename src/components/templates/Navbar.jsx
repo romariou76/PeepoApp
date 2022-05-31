@@ -13,7 +13,7 @@ function Navbar() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/productos").then((response) =>
+    fetch("http://34.176.3.164:4000/api/productos").then((response) =>
       response.json().then((json) => setData(json))
     );
   }, []);

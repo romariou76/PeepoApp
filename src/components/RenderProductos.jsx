@@ -5,7 +5,7 @@ function RenderProductos({ number }) {
   const cookies = new Cookies();
   const [producto, setProduct] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:4000/api/productos")
+    fetch("http://34.176.3.164:4000/api/productos")
       .then((response) => response.json())
       .then((json) => setProduct(json));
   }, []);

@@ -14,7 +14,7 @@ function Register() {
   const password = useRef({});
   password.current = watch("password", "");
   //API del server
-  const url = "http://localhost:4000/api/register";
+  const url = "http://34.176.3.164:4000/api/register";
   const action = (body) => {
     axios.post(url, body).then((res) => {
       console.log("Respuesta: ", res.data);

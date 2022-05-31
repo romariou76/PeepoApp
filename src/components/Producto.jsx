@@ -8,7 +8,7 @@ function Producto(props) {
   const { product_id } = useParams();
   const [producto, setProducto] = useState([]);
   useEffect(() => {
-    fetch(`http://localhost:4000/api/producto/${product_id}`)
+    fetch(`http://34.176.3.164:4000/api/producto/${product_id}`)
       .then((data) => data.json())
       .then((json) => {
         setProducto(json);

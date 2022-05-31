@@ -7,7 +7,7 @@ function Categorias() {
   const [categoria, setCategoria] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/categorias")
+    fetch("http://34.176.3.164:4000/api/categorias")
       .then((response) => response.json())
       .then((json) => setCategoria(json));
   }, []);
